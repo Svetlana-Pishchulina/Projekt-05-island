@@ -33,7 +33,7 @@ body {
   padding: 0;
   background-color: #f5f5f5;
   font-family: 'Merriweather', serif;
-  font-size: 16px;
+  font-size: 12px;
   line-height: 1.6;
 }
 
@@ -105,7 +105,7 @@ body {
 
   font-family: 'Raleway', serif;
   font-weight: 700;
-  font-size: 26px;
+  font-size: 22px;
 }
 
 .section h2::after {
@@ -167,7 +167,7 @@ footer a {
 
 @media screen and (min-width: 500px) {
   body {
-    font-size: 18px;
+    font-size: 14px;
   }
 
   /* HLAVICKA */
@@ -178,7 +178,7 @@ footer a {
 
   .titulek {
     margin-bottom: 15px;
-    font-size: 46px;
+    font-size: 56px;
   }
 
   .perex {
@@ -196,7 +196,7 @@ footer a {
 
   .menu {
     display: flex;
-    font-size: 14px;
+    font-size: 12px;
     padding: 0px;
   }
 
@@ -216,7 +216,7 @@ footer a {
   }
 
   .section h2 {
-    font-size: 30px;
+    font-size: 26px;
   }
 
   .section h2::after {
@@ -294,15 +294,15 @@ footer a {
     transform: translateY(-100%);
   }
 
-  footer {
-    font-size: 12px;
-  }
+  /* footer {
+    font-size: 10px;
+  } */
 }
 
 /* _______________________________________________________ */
 @media screen and (min-width: 1000px) {
   body {
-    font-size: 20px;
+    font-size: 18px;
   }
 
   /* HLAVICKA */
@@ -320,7 +320,7 @@ footer a {
 
   .titulek {
     margin-bottom: 20px;
-    font-size: 64px;
+    font-size: 84px;
   }
 
   .perex {
@@ -393,7 +393,7 @@ footer a {
   }
 
   .section h2 {
-    font-size: 32px;
+    font-size: 38px;
     margin-bottom: 40px;
   }
 
