@@ -12,6 +12,7 @@
 */
 
 /* NORMALIZE */
+<<<<<<< HEAD
 
 * {
   margin: 0;
@@ -366,79 +367,326 @@ footer a {
   }
 
   .menu-item {
-    width: 100%;
-    border-top: none;
-    justify-content: start;
-  }
+=======
 
-  .menu-item:not(:last-child) {
-    border-right: none;
-  }
+* {
+  margin: 0;
+  padding: 0;
+}
 
-  .lead-in {
-    flex: 1 1 70%;
-    padding: 0;
-  }
+a {
+  text-decoration: none;
+  color: inherit;
+}
 
-  .lead-in figure {
-    position: relative;
-    bottom: 0;
-    left: calc(-42.857% - 30px);
+ul {
+  list-style: none;
+}
+/* _______________ */
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+  font-family: 'Merriweather', serif;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* HLAVICKA */
+.header {
+  padding: 30px;
+  margin-bottom: 30px;
+  text-align: center;
+  color: #fff;
+  background-image: linear-gradient(
+      to right,
+      rgba(17, 17, 17, 0.4),
+      rgba(17, 17, 17, 0.4)
+    ),
+    url(./images//island-hlavicka.jpg);
+  background-position: center center;
+  background-size: cover;
+}
+
+.titulek {
+  margin-bottom: 10px;
+  font-family: 'Raleway', serif;
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.perex {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.perex::after {
+  position: absolute;
+  bottom: -20px;
+  left: calc(50% - 40px);
+  display: block;
+  content: ' ';
+  width: 80px;
+  height: 1px;
+  background-color: #fff;
+}
+
+.autor {
+  color: rgba(255, 255, 255, 0.75);
+  font-style: italic;
+}
+
+/* MENU */
+.menu {
+  margin-bottom: 30px;
+  padding: 30px;
+  color: lightgrey;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Raleway', serif;
+  font-weight: 700;
+}
+
+.menu-item {
+  padding: 5px;
+  border-bottom: solid 1px lightgrey;
+}
+
+.section {
+  padding: 20px 0;
+}
+
+.section h2 {
+  position: relative;
+
+  margin-bottom: 30px;
+  padding: 0 20px;
+
+  font-family: 'Raleway', serif;
+  font-weight: 700;
+  font-size: 26px;
+}
+
+.section h2::after {
+  position: absolute;
+  top: 50px;
+  left: -20px;
+  display: block;
+  content: ' ';
+  width: 80px;
+  height: 3px;
+  background-color: rgb(100, 175, 237);
+}
+
+.section p {
+  padding: 0 20px;
+  margin-bottom: 15px;
+}
+
+figure {
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.picture {
+  width: 100%;
+}
+
+.popisek {
+  font-size: 8px;
+  text-align: center;
+  /* color: lightgrey; */
+  color: grey;
+  /* text-shadow: 1px 2px 2px rgba(17, 17, 17, 0.9); */
+}
+
+.popisek a {
+  text-decoration: underline;
+}
+
+.fotogalerie {
+  box-shadow: 1px 12px 12px #91928467;
+}
+
+footer {
+  padding: 20px;
+  font-size: 8px;
+  font-weight: 700;
+  color: lightgrey;
+}
+
+footer a {
+  text-decoration: underline;
+}
+/* OBSAH */
+
+/* FOTOGALERIE */
+
+/* PATICKA */
+
+/* _________________________________________________________________ */
+
+@media screen and (min-width: 500px) {
+  /* body {
     margin: 0;
-    font-size: 0;
-    width: calc(142.857% + 60px);
-  }
-
-  .secondary p,
-  .secondary h2 {
     padding: 0;
-    width: 70%;
-    margin-right: auto;
-    margin-left: 30px;
+    background-color: #f5f5f5;
+    font-family: 'Merriweather', serif;
+    font-size: 16px;
+    line-height: 1.6;
+  } */
+
+  /* HLAVICKA */
+  .header {
+    padding: 40px;
+    margin-bottom: 40px;
+    /* text-align: center; */
+    /* color: #fff; */
+    /* background-image: linear-gradient(
+        to right,
+        rgba(17, 17, 17, 0.4),
+        rgba(17, 17, 17, 0.4)
+      ),
+      url(./images//island-hlavicka.jpg); */
+    /* background-position: center center; */
+    /* background-size: cover; */
   }
 
-  .secondary:nth-child(2n + 1) p,
-  .secondary:nth-child(2n + 1) h2 {
-    margin-left: auto;
-    margin-right: 30px;
+  .titulek {
+    margin-bottom: 15px;
+    /* font-family: 'Raleway', serif; */
+    font-size: 40px;
+    /* font-weight: 700; */
   }
 
-  .section h2 {
-    font-size: 32px;
+  .perex {
+    /* position: relative; */
     margin-bottom: 40px;
   }
 
-  .section h2::after {
-    top: 70px;
-    left: -30px;
+  .perex::after {
+    /* position: absolute; */
+    bottom: -30px;
+    left: calc(50% - 50px);
+    /* display: block;
+    content: ' '; */
+    width: 100px;
+    height: 2px;
+    /* background-color: #fff; */
   }
 
-  .section.lead-in p {
-    padding: 0 0 0 24px;
+  /* .autor {
+    color: rgba(255, 255, 255, 0.75);
+  } */
+
+  /* MENU */
+
+  .menu {
+    display: flex;
+    font-size: 14px;
+
+    /* justify-content: space-between; */
+    /* margin-bottom: 30px; */
+    padding: 0px;
+    /* color: lightgrey; */
+    /* text-align: center;
+  text-transform: uppercase; */
+    /* font-family: 'Raleway', serif;
+  font-weight: 700; */
+  }
+
+  .menu-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 5px;
+    flex: 1 1 25%;
+    border-bottom: solid 1px lightgrey;
+    border-top: solid 1px lightgrey;
+  }
+
+  .menu-item:not(:last-child) {
+    border-right: solid 1px lightgrey;
+  }
+
+  .section {
+    padding: 24px 0;
+  }
+
+  .section h2 {
+    /* position: relative;
+
+    margin-bottom: 30px;
+    padding: 0 20px;
+
+    font-family: 'Raleway', serif;
+    font-weight: 700; */
+    font-size: 30px;
+  }
+
+  .section h2::after {
+    /* position: absolute; */
+    top: 60px;
+    /* left: -20px; */
+    /* display: block;
+    content: ' '; */
+    width: 100px;
+    height: 4px;
+    /* background-color: rgb(100, 175, 237); */
+  }
+
+  .section p {
+    padding: 0 24px;
     margin-bottom: 16px;
   }
 
   figure {
-    margin-top: 42px;
-    margin-bottom: 22px;
+    margin-top: 32px;
+    margin-bottom: 12px;
 
     position: relative;
+    /* text-align: right; */
   }
+
+  /* .picture {
+    width: 100%;
+  } */
 
   .popisek {
     position: absolute;
     bottom: 10px;
     right: 10px;
 
-    font-size: 12px;
+    font-size: 8px;
+    text-shadow: 1px 2px 2px rgba(17, 17, 17, 0.9);
+    color: lightgrey;
   }
 
+  /* .popisek a {
+    text-decoration: underline;
+  } */
+
   .fotogalerie {
+    /* box-shadow: 1px 12px 12px #91928467; */
     padding-bottom: 0;
   }
 
+  .galerie {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 0;
+  }
+
   .foto {
-    flex: 0 1 33.333%;
+    flex: 0 1 50%;
+  }
+
+  .galerie figure {
+    margin: 0;
+    overflow: hidden;
+    /* position: relative; */
   }
 
   .foto .picture {
@@ -466,15 +714,329 @@ footer a {
   }
 
   .foto:hover .popisek {
+    /* bottom: 0; */
+    /* transform: translateY(-35px); */
+    transform: translateY(-100%);
+  }
+
+  footer {
+    /* padding: 20px; */
+    font-size: 9px;
+    /* font-weight: 700;
+    color: lightgrey; */
+  }
+}
+
+/* _______________________________________________________ */
+@media screen and (min-width: 1000px) {
+  /* body {
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    font-family: 'Merriweather', serif;
+    font-size: 16px;
+    line-height: 1.6;
+  } */
+
+  /* HLAVICKA */
+  .header {
+    padding: 40px 120px 120px;
+    margin-bottom: 40px;
+    /* text-align: center; */
+    /* color: #fff; */
+    /* background-image: linear-gradient(
+        to right,
+        rgba(17, 17, 17, 0.4),
+        rgba(17, 17, 17, 0.4)
+      ),
+      url(./images//island-hlavicka.jpg); */
+    /* background-position: center center; */
+    /* background-size: cover; */
+  }
+
+  .titulek {
+    margin-bottom: 20px;
+    /* font-family: 'Raleway', serif; */
+    font-size: 54px;
+    /* font-weight: 700; */
+  }
+
+  .perex {
+    /* position: relative; */
+    margin-bottom: 40px;
+  }
+
+  .perex::after {
+    /* position: absolute; */
+    bottom: -30px;
+    left: calc(50% - 50px);
+    /* display: block;
+    content: ' '; */
+    width: 100px;
+    height: 2px;
+    /* background-color: #fff; */
+  }
+
+  /* .autor {
+    color: rgba(255, 255, 255, 0.75);
+  } */
+
+  /* MENU */
+
+  .main-part {
+    position: relative;
+    top: -120px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 40px 0 -120px;
+    background-color: #fff;
+    box-shadow: 2px 5px 20px #91928467;
+  }
+
+  .first-part {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    padding: 30px;
+    /* overflow:; */
+  }
+
+  nav {
+    flex: 1 1 30%;
+  }
+
+  .menu {
+    /* display: flex; */
+    flex-direction: column;
+    align-items: flex-start;
+
+    font-size: 20px;
+
+    /* justify-content: space-between; */
+    /* margin-bottom: 30px; */
+    /* padding: 0px; */
+    /* color: lightgrey; */
+    /* text-align: center;
+  text-transform: uppercase; */
+    /* font-family: 'Raleway', serif;
+  font-weight: 700; */
+  }
+
+  .menu-item {
+    /* display: flex; */
+    /* align-items: center; */
+    /* justify-content: center; */
+
+    /* padding: 5px; */
+    /* flex: 1 1 25%; */
+    /* border-bottom: solid 1px lightgrey; */
+>>>>>>> cba2b8684207e7d911514cd3e6bbeb90a43d3ae2
+    width: 100%;
+    border-top: none;
+    justify-content: start;
+  }
+
+  .menu-item:not(:last-child) {
+    border-right: none;
+  }
+
+<<<<<<< HEAD
+  .lead-in {
+=======
+  .section.lead-in {
+>>>>>>> cba2b8684207e7d911514cd3e6bbeb90a43d3ae2
+    flex: 1 1 70%;
+    padding: 0;
+  }
+
+<<<<<<< HEAD
+  .lead-in figure {
+    position: relative;
+    bottom: 0;
+    left: calc(-42.857% - 30px);
+=======
+  .section.lead-in figure {
+    position: relative;
+    bottom: 0;
+    left: calc(-42.8% - 30px);
+>>>>>>> cba2b8684207e7d911514cd3e6bbeb90a43d3ae2
+    margin: 0;
+    font-size: 0;
+    width: calc(142.857% + 60px);
+  }
+
+<<<<<<< HEAD
+  .secondary p,
+  .secondary h2 {
+    padding: 0;
+    width: 70%;
+    margin-right: auto;
+    margin-left: 30px;
+  }
+
+  .secondary:nth-child(2n + 1) p,
+  .secondary:nth-child(2n + 1) h2 {
+    margin-left: auto;
+    margin-right: 30px;
+  }
+
+  .section h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+  }
+
+  .section h2::after {
+    top: 70px;
+    left: -30px;
+=======
+  /* .section {
+    padding: 24px 0;
+  } */
+
+  .section h2 {
+    /* position: relative;
+
+    margin-bottom: 30px;
+    padding: 0 20px;
+
+    font-family: 'Raleway', serif;
+    font-weight: 700; */
+    font-size: 32px;
+  }
+
+  .section h2::after {
+    /* position: absolute; */
+    top: 70px;
+    left: 0px;
+    /* display: block;
+    content: ' '; */
+    /* width: 100px; */
+    /* height: 4px; */
+    /* background-color: rgb(100, 175, 237); */
+>>>>>>> cba2b8684207e7d911514cd3e6bbeb90a43d3ae2
+  }
+
+  .section.lead-in p {
+    padding: 0 0 0 24px;
+    margin-bottom: 16px;
+  }
+
+  figure {
+<<<<<<< HEAD
+    margin-top: 42px;
+    margin-bottom: 22px;
+
+    position: relative;
+  }
+
+=======
+    margin-top: 32px;
+    margin-bottom: 12px;
+
+    position: relative;
+
+    /* text-align: right; */
+  }
+
+  /* .picture {
+    width: 100%;
+  } */
+
+>>>>>>> cba2b8684207e7d911514cd3e6bbeb90a43d3ae2
+  .popisek {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+
+<<<<<<< HEAD
+    font-size: 12px;
+  }
+
+  .fotogalerie {
+    padding-bottom: 0;
+  }
+
+=======
+    font-size: 8px;
+    /* text-shadow: 1px 2px 2px rgba(17, 17, 17, 0.9); */
+    /* color: lightgrey; */
+  }
+
+  /* .popisek a {
+    text-decoration: underline;
+  } */
+
+  .fotogalerie {
+    /* box-shadow: 1px 12px 12px #91928467; */
+    padding-bottom: 0;
+  }
+
+  .galerie {
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+    /* font-size: 0; */
+  }
+
+>>>>>>> cba2b8684207e7d911514cd3e6bbeb90a43d3ae2
+  .foto {
+    flex: 0 1 33.333%;
+  }
+
+<<<<<<< HEAD
+=======
+  .galerie figure {
+    /* margin: 0; */
+    /* overflow: hidden; */
+    /* position: relative; */
+  }
+
+>>>>>>> cba2b8684207e7d911514cd3e6bbeb90a43d3ae2
+  .foto .picture {
+    transition-property: transform;
+    transition-duration: 300ms;
+    transition-timing-function: linear;
+    transition-delay: 0;
+  }
+
+  .foto:hover .picture {
+    transform: scale(1.1);
+  }
+
+  .foto .popisek {
+    bottom: -35px;
+    right: 0;
+    width: 100%;
+    font-size: 10px;
+    background-color: rgba(17, 17, 17, 0.45);
+
+    transition-property: transform;
+    transition-duration: 300ms;
+    transition-timing-function: linear;
+    transition-delay: 0;
+  }
+
+  .foto:hover .popisek {
+<<<<<<< HEAD
+=======
+    /* bottom: 0; */
+>>>>>>> cba2b8684207e7d911514cd3e6bbeb90a43d3ae2
     transform: translateY(-35px);
   }
 
   footer {
+<<<<<<< HEAD
     padding: 0 0 40px 0;
     font-size: 14px;
     width: 80%;
     margin-left: auto;
     margin-right: auto;
     margin-top: -80px;
+=======
+    /* padding: 20px; */
+    font-size: 9px;
+    /* font-weight: 700;
+    color: lightgrey; */
+>>>>>>> cba2b8684207e7d911514cd3e6bbeb90a43d3ae2
   }
 }
