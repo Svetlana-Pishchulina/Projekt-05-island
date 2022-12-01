@@ -97,10 +97,6 @@ body {
   border-bottom: solid 1px lightgrey;
 }
 
-.section {
-  padding: 20px 0;
-}
-
 .section h2 {
   position: relative;
 
@@ -130,7 +126,7 @@ body {
 
 figure {
   margin-top: 30px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 .picture {
@@ -219,10 +215,6 @@ footer a {
     border-right: solid 1px rgba(211, 211, 211, 0.6);
   }
 
-  .section {
-    padding: 24px 0;
-  }
-
   .section h2 {
     font-size: 30px;
   }
@@ -240,7 +232,7 @@ footer a {
 
   figure {
     margin-top: 32px;
-    margin-bottom: 12px;
+    margin-bottom: 32px;
 
     position: relative;
   }
@@ -315,8 +307,15 @@ footer a {
 
   /* HLAVICKA */
   .header {
-    padding: 40px 120px 120px;
+    padding: 40px 0 120px;
     margin-bottom: 40px;
+  }
+
+  .header-content {
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 50px;
   }
 
   .titulek {
@@ -340,22 +339,17 @@ footer a {
   .main-part {
     position: relative;
     top: -120px;
-    width: 80%;
+    width: 960px;
     margin-left: auto;
     margin-right: auto;
+    padding-top: 50px;
     background-color: #fff;
     box-shadow: 2px 5px 20px #91928467;
   }
 
-  .first-part {
-    display: flex;
-    justify-content: space-between;
-    position: relative;
-    padding: 30px;
-  }
-
   nav {
-    flex: 1 1 30%;
+    float: left;
+    margin-left: 40px;
   }
 
   .menu {
@@ -375,18 +369,13 @@ footer a {
     border-right: none;
   }
 
-  .lead-in {
-    flex: 1 1 70%;
+  .section p {
     padding: 0;
   }
 
-  .lead-in figure {
-    position: relative;
-    bottom: 0;
-    left: calc(-42.857% - 30px);
-    margin: 0;
-    font-size: 0;
-    width: calc(142.857% + 60px);
+  .lead-in-text {
+    margin-left: 300px;
+    margin-right: 40px;
   }
 
   .secondary p,
@@ -397,8 +386,8 @@ footer a {
     margin-left: 30px;
   }
 
-  .secondary:nth-child(2n + 1) p,
-  .secondary:nth-child(2n + 1) h2 {
+  .secondary:nth-child(2n) p,
+  .secondary:nth-child(2n) h2 {
     margin-left: auto;
     margin-right: 30px;
   }
@@ -413,14 +402,9 @@ footer a {
     left: -30px;
   }
 
-  .section.lead-in p {
-    padding: 0 0 0 24px;
-    margin-bottom: 16px;
-  }
-
   figure {
     margin-top: 42px;
-    margin-bottom: 22px;
+    margin-bottom: 42px;
 
     position: relative;
   }
@@ -472,7 +456,7 @@ footer a {
   footer {
     padding: 0 0 40px 0;
     font-size: 14px;
-    width: 80%;
+    width: 960px;
     margin-left: auto;
     margin-right: auto;
     margin-top: -80px;
